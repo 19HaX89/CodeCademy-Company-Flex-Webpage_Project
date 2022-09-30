@@ -1,0 +1,197 @@
+/* 1. Page Styling */
+* {
+    box-sizing: border-box;
+    font-family: 'Ubunutu', sans-serif;
+    left: 0px;
+}
+
+main {
+    margin-top: 8rem;/* Offset main section to accomodate for fixed header */
+    background-color: rgb(218, 247, 168);
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    padding-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 3rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/* 2. Header section */
+header {
+    top: 0px;
+    position: fixed;
+    height: 8rem;
+    width: 100%;
+    background-color: #A7DE9E;
+    color: #2F2F4B;
+    border-bottom: 1px solid black;
+}
+
+header .container {
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+header .container img {
+    width: 5rem;
+    margin: auto 0;
+    margin-left: 1rem;
+}
+
+header .container ul {
+    display: flex;
+    list-style: none;
+}
+
+header .container li {
+    margin: 0 5rem;
+    width: fit-content;
+}
+
+header .container li a {
+    font-size: 2rem;
+}
+
+header .container li a:link {
+    text-decoration: none;
+    color: #2F2F4B;
+}
+
+header .container li a:visited {
+    text-decoration: none;
+    color: #2F2F4B;
+}
+
+header .container li a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+@media only screen and (max-width: 1200px) {
+    header .container li {
+        margin: 0 2rem;
+    }
+
+    header .container li a {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header .container li {
+        margin: 0 0.75rem;
+    }
+
+    header .container li a {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header .container li {
+        margin: 0 0.5rem;
+    }
+
+    header .container li a {
+        font-size: 0.65rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    header .container ul {
+        padding-left: 0.75rem;
+    }
+
+    header .container li a {
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+    header {
+        height: 5rem;
+    }
+
+    header .container img {
+        width: 3rem;
+    }
+}
+
+/* 3. Intro section */
+.intro {
+    display: flex;
+    background-color: rgba(137, 147, 156, 0.7);
+    width: 100%;
+    height: 10rem;
+    align-content: center;
+    justify-content: center;
+}
+
+/* 4. Contact us section */
+address {
+    font-size: 2rem;
+    line-height: 2;
+}
+
+address div {
+    margin-bottom: 3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 4rem;
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+form textarea {
+    font-size: 1.5rem;
+}
+
+form input {
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 480px) {
+    address {
+        font-size: 1.25rem;
+    }
+
+    form textarea {
+        font-size: 1rem;
+    }
+}

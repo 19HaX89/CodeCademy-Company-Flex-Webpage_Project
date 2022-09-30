@@ -1,0 +1,284 @@
+/* 1. Page Styling */
+* {
+    left: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+    margin-top: 8rem;/* Offset main section to accomodate for fixed header */
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+}
+
+/* 2. Header section */
+header {
+    top: 0px;
+    position: fixed;
+    height: 8rem;
+    width: 100%;
+    background-color: #A7DE9E;
+    color: #2F2F4B;
+    border-bottom: 1px solid black;
+}
+
+header .container {
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+header .container img {
+    width: 5rem;
+    margin: auto 0;
+    margin-left: 1rem;
+}
+
+header .container ul {
+    display: flex;
+    list-style: none;
+}
+
+header .container li {
+    margin: 0 5rem;
+    width: fit-content;
+}
+
+header .container li a {
+    font-size: 2rem;
+}
+
+header .container li a:link {
+    text-decoration: none;
+    color: #2F2F4B;
+}
+
+header .container li a:visited {
+    text-decoration: none;
+    color: #2F2F4B;
+}
+
+header .container li a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+@media only screen and (max-width: 1200px) {
+    header .container li {
+        margin: 0 2rem;
+    }
+
+    header .container li a {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header .container li {
+        margin: 0 0.75rem;
+    }
+
+    header .container li a {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header .container li {
+        margin: 0 0.5rem;
+    }
+
+    header .container li a {
+        font-size: 0.65rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    header .container ul {
+        padding-left: 0.75rem;
+    }
+
+    header .container li a {
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+    header {
+        height: 5rem;
+    }
+
+    header .container img {
+        width: 3rem;
+    }
+}
+
+/* 3. Page hero section */
+.hero {
+    height: auto;
+    width: 100%;
+    background-image: url(../images/green\ abstract\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: rgb(53, 53, 53);
+    padding: 2rem;
+}
+
+main .intro {
+    background-color: rgba(189, 223, 139, 0.7);
+    width: 40%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero h2 {
+    line-height: 1.5;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero h2 {
+        line-height: 1.3;
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    main .intro {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h2 {
+        line-height: 1.2;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    main .intro {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero h2 {
+        line-height: 1;
+        font-size: 1rem;
+    }
+}
+
+/* 4. Our mission section */
+.mission {
+    clear: both;
+    height: auto;
+    width: 100%;
+    background-image: url(../images/blue\ network\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    color: aliceblue;
+    padding: 4rem;
+}
+
+.mission .text {
+    background-color: rgba(98, 87, 201, 0.7);
+    width: 30%;
+    height: auto;
+    padding: 0.75rem;
+}
+
+.mission h2 {
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+.mission li {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .mission h2 {
+        font-size: 3rem;
+    }
+
+    .mission li {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .mission .text {
+        width: 70%;
+        padding: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .mission .text {
+        width: 90%;
+    }
+
+    .mission h2 {
+        font-size: 2.5rem;
+    }
+
+    .mission li {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .mission .text {
+        width: 100%;
+        padding: 0.5rem 0px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .mission h2 {
+        font-size: 1rem;
+    }
+
+    .mission li {
+        font-size: 0.75rem;
+    }
+}
+
+/* 5. Footer */
+footer {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+    footer {
+        font-size: 1rem;
+    }
+}
